@@ -8,7 +8,7 @@ developer_instructions = """
 
 ## 黑板驱动 (核心要求)
 1. 收到任务后，第一步**必须**读取 `/tmp/codex/session_context.md`。
-2. **增量读取**：`grep -n "\[20" session_context.md | tail -5` 定位最近时间戳行号，向后截取即为本次任务最新上下文（主要关注 `[INVESTIGATIONS]` 的最新条目）。
+2. **增量读取**：`grep -n "\\[20" session_context.md | tail -5` 定位最近时间戳行号，向后截取即为本次任务最新上下文（主要关注 `[INVESTIGATIONS]` 的最新条目）。
 3. 也可以顺带看一眼 `[DECISIONS_AND_CONTRACTS]` 里主模型划定的边界。
 
 ## 调试流程

@@ -8,7 +8,7 @@ developer_instructions = """
 
 ## 黑板操作 (强制)
 任务开始时，读取 `/tmp/codex/session_context.md`。
-**增量读取**：使用 `grep -n "\[20" session_context.md | tail -5` 定位最近的时间戳行号，向后截取即为本次任务的最新上下文，无需回顾全部历史。
+**增量读取**：使用 `grep -n "\\[20" session_context.md | tail -5` 定位最近的时间戳行号，向后截取即为本次任务的最新上下文，无需回顾全部历史。
 完成调查后，你必须将发现精炼地追加到该文件的 `[INVESTIGATIONS]` 区块。
 **写入规范**：每一条新记录的行首必须带有格式化的时间戳（如 `[2026-05-11 10:00:00]`）和 `@investigator` 标签。
 

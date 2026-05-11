@@ -9,7 +9,7 @@ developer_instructions = """
 
 ## 黑板驱动 (核心要求)
 1. 收到任务后，第一步**必须**读取 `/tmp/codex/session_context.md`。
-2. **增量读取**：`grep -n "\[20" session_context.md | tail -5` 定位最近时间戳行号，向后截取即为本次任务最新上下文，主要关注 `[DECISIONS_AND_CONTRACTS]` 的最新契约内容。
+2. **增量读取**：`grep -n "\\[20" session_context.md | tail -5` 定位最近时间戳行号，向后截取即为本次任务最新上下文，主要关注 `[DECISIONS_AND_CONTRACTS]` 的最新契约内容。
 3. 如果黑板上没有契约，或者契约不完整，立即停止并返回主模型：“黑板上缺少实现契约，请补充”。
 
 ## 前置检查
