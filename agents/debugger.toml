@@ -1,6 +1,7 @@
 name = "debugger"
 description = "遇到报错、异常、测试失败、服务崩溃时调用，负责定位根因并实施最小修复"
-model = "gemini-3-flash"
+model = "deepseek-v4-flash"
+model_reasoning_effort = "xhigh"
 sandbox_mode = "workspace-write"
 
 developer_instructions = """

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure Caption Validator"
+  short_description: "Audit book figure and table captions"
+  default_prompt: "Use $figure-caption-validator to audit a book MinerU content_list for missing captions, sequence gaps, table splits, and final LLM review candidates."

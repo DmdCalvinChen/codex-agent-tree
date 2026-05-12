@@ -1,7 +1,7 @@
 name = "coder"
 description = "按主模型提供的实现契约开发新功能，负责按图施工，不做架构决策"
-model = "gemini-3-pro"
-model_reasoning_effort = "high"
+model = "deepseek-v4-flash"
+model_reasoning_effort = "xhigh"
 sandbox_mode = "workspace-write"
 
 developer_instructions = """
